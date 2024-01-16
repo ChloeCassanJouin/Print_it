@@ -105,19 +105,21 @@ header {
 #carousel {
 	display: flex;
 	flex-direction: column;
-	/*align-items: end;*/
 	justify-content: center;
-	/*width: 100%;*/
-	min-height: 470px;
+	height: 30em;
 	position: relative;
-	/*overflow: hidden;*/
 }
+
+#carousel img {
+	display: flex;
+	width: 100%;
+	min-height: 100%;
+}
+
 .carousel-slide {
-	position: absolute;
 	height: 100%;
 	z-index: -1;
 }
-
 
 .active {
 	background-color: transparent;
@@ -125,11 +127,11 @@ header {
 }
 
 #carousel .arrow  {
-	position: absolute;
-	width: 100%;
-	/*display: flex;
-	justify-content: space-between;*/
+	position: relative;
+	bottom: 15em;
+
 }
+
 #carousel .arrow_left {
 	position: relative;
 }
@@ -141,7 +143,6 @@ header {
 .prev-button, 
 .next-button {
 	position: absolute;
-	/*top: 50%;*/
 	transform: translateY(-50%);
 	background-color: transparent;
 	border: none;
@@ -157,8 +158,8 @@ header {
 }
 
 .carousel-dots {
-	position: absolute;
-	bottom: 40px;
+	position: relative;
+	bottom: 3em;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -186,7 +187,6 @@ header {
 	color: white;
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 	text-align: center;
-	width:90%;
 }
 
 #carousel span {
@@ -195,12 +195,6 @@ header {
 	font-size: 30px;
 }
 /* Fin du code CSS pour le carousel */
-
-
-
-
-
-
 
 #about-us {
 	display: flex;
